@@ -1,8 +1,8 @@
 {
-  "name": "@chat-ting/frontend",
+  "name": "@chat-ting/client.app",
   "version": "0.0.1",
   "private": true,
-  "repository": "https://github.com/chat-ting/frontend",
+  "repository": "https://github.com/chat-ting/client.app",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
