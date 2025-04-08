@@ -1,9 +1,10 @@
-import { SafeAreaView, View } from 'react-native';
+import { SafeAreaView, useWindowDimensions, View } from 'react-native';
 
 export function Layout({ ...props }) {
+  const { height: vh, width: _ } = useWindowDimensions();
   return (
-    <SafeAreaView>
-      <View style={{ padding: 20 }}>{props.children}</View>
+    <SafeAreaView style={{ minHeight: vh }}>
+      <View style={{ padding: 12 }}>{props.children}</View>
     </SafeAreaView>
   );
 }
